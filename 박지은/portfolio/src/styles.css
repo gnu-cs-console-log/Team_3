@@ -1,0 +1,162 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.container {
+  display: grid;
+  grid-template-rows: 132px 1fr 220px;
+  width: 1440px;
+}
+footer {
+  height: 220px;
+  display: grid;
+  width: 1440px;
+  background-color: #c8f3b9;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+.bg-news {
+  background: -webkit-linear-gradient(70deg, #c8f3b9 40%, #ffffff 40%);
+  background: -o-linear-gradient(70deg, #c8f3b9 40%, #ffffff 40%);
+  background: -moz-linear-gradient(70deg, #c8f3b9 40%, #ffffff 40%);
+  background: linear-gradient(70deg, #c8f3b9 40%, #ffffff 40%);
+}
+
+nav {
+  width: 1440px;
+  height: 132px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  margin: auto 0;
+}
+
+nav > p {
+  font-weight: 900;
+  font-size: 36px;
+  color: #16b138;
+  letter-spacing: 0.25em;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  text-align: center;
+  padding-left: 20%;
+}
+nav > div {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+a {
+  font-weight: 300;
+  font-size: 30px;
+  text-decoration: none;
+  color: #000000;
+  padding: 10px;
+}
+
+a:hover,
+a:active {
+  font-weight: 500;
+  font-size: 30px;
+  color: #088123;
+}
+
+#profile_img {
+  width: 354px;
+  height: 456px;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+#introduction {
+  width: 700px;
+  height: 456px;
+  grid-column-start: 3;
+  grid-column-end: 6;
+  margin: 50px;
+}
+
+#content {
+  margin: 0 auto;
+  padding-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  vertical-align: middle;
+}
+
+#intro_first {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+#intro_second {
+  font-weight: bold;
+  font-size: 64px;
+  color: #16b138;
+  margin: 20px 0;
+}
+
+#intro_third {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+#intro_third > span {
+  color: #8a5555;
+}
+
+#introduction > img {
+  width: 45px;
+  height: 45px;
+  margin-right: 10px;
+  margin-top: 30px;
+}
+.project_container {
+  margin: 100px 44px;
+  padding: 45px 30px;
+  width: 356px;
+  height: 499px;
+  background: rgba(248, 255, 227, 0.65);
+  border-radius: 70px;
+}
+
+.project_container > img {
+  width: 296px;
+  height: 276px;
+}
+.project_container > h6 {
+  font-size: 36px;
+  text-align: center;
+  margin-top: 30px;
+}
+.project_container > p {
+  font-size: 24px;
+  text-align: center;
+}
+
+.title {
+  font-size: 36px;
+  font-style: bold;
+  text-align: center;
+  margin-top: 40px;
+  height: 50px;
+}
+.project_box {
+  display: grid;
+  grid-template-columns: 444px 444px 444px;
+}
+
+.about_container {
+  width: 50%;
+  margin: 70px auto;
+  text-align: center;
+}

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Document</title>
+    <style>
+      body {
+        width: 1440px;
+        height: 1024px;
+        display: grid;
+        grid-template-rows: 132px 1fr 220px;
+        font-family: "Ubuntu", sans-serif;
+      }
+
+      nav {
+        width: 1440px;
+        display: grid;
+        grid-template-columns: 1fr 2fr 2fr;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        margin: auto 0;
+      }
+
+      nav > p {
+        font-weight: 900;
+        font-size: 36px;
+        color: #16b138;
+        letter-spacing: 0.25em;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        text-align: center;
+        padding-left: 20%;
+      }
+      nav > div {
+        grid-column-start: 3;
+        grid-column-end: 5;
+        padding: 20px;
+        margin-top: 20px;
+      }
+
+      a {
+        font-weight: 300;
+        font-size: 30px;
+        text-decoration: none;
+        color: #000000;
+        padding: 10px;
+      }
+
+      a:hover,
+      a:active {
+        font-weight: 500;
+        font-size: 30px;
+        color: #088123;
+      }
+
+      #profile_img {
+        width: 354px;
+        height: 456px;
+        grid-column-start: 2;
+        grid-column-end: 3;
+      }
+
+      #introduction {
+        width: 700px;
+        height: 456px;
+        grid-column-start: 3;
+        grid-column-end: 6;
+        margin: 50px;
+      }
+
+      #content {
+        height: 456px;
+        margin: 0 auto;
+        padding-top: 100px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        vertical-align: middle;
+      }
+
+      #intro_first {
+        font-weight: bold;
+        font-size: 24px;
+      }
+
+      #intro_second {
+        font-weight: bold;
+        font-size: 64px;
+        color: #16b138;
+        margin: 20px 0;
+      }
+
+      #intro_third {
+        font-weight: bold;
+        font-size: 24px;
+      }
+
+      #intro_third > span {
+        color: #8a5555;
+      }
+
+      #introduction > img {
+        width: 45px;
+        height: 45px;
+        margin-right: 10px;
+        margin-top: 30px;
+      }
+
+      footer {
+        height: 220px;
+        display: grid;
+        width: 1440px;
+        background-color: #c8f3b9;
+        grid-row-start: 3;
+        grid-row-end: 4;
+      }
+      #left {
+        width: 366px;
+        height: 1024px;
+        background: #c8f3b9;
+        position: absolute;
+        z-index: -1;
+        left: 0px;
+        top: 0px;
+      }
+      #right {
+        width: 1074px;
+        height: 1024px;
+        height: auto;
+        position: absolute;
+        left: 366px;
+        top: 0px;
+        z-index: -1;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="left"></div>
+    <div id="right"></div>
+    <div id="content">
+      <img id="profile_img" src="img\jieun.jpg" alt="profile_img" />
+      <div id="introduction">
+        <p id="intro_first">Hello, I am</p>
+        <p id="intro_second">Jieun Park</p>
+        <p id="intro_third">
+          <span>Web Developer</span> from Republic of Korea 🇰🇷
+        </p>
+        <img
+          src="img\instagram.png"
+          alt="instagram"
+          onclick="location.href='https://www.instagram.com/jjijji_p/'"
+        />
+        <img
+          src="img\github.png"
+          alt="github"
+          onclick="location.href='https://github.com/jieunb3333'"
+        />
+        <img
+          src="img\facebook.png"
+          alt="facebook"
+          onclick="location.href='https://www.facebook.com/profile.php?id=100004727674732'"
+        />
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+{
+  "data": {
+    "students": [
+      {
+        "id": 0,
+        "name": "박지은",
+        "age": 24
+      }
+    ],
+    "projects": [
+      {
+        "id": 0,
+        "project_name": "commlion",
+        "project_intro": "멋사 커뮤니티"
+      },
+      {
+        "id": 1,
+        "project_name": "healthier",
+        "project_intro": "헬스케어 서비스"
+      },
+      {
+        "id": 2,
+        "project_name": "지원서 서비스",
+        "project_intro": "멋사 9기 지원자"
+      }
+    ]
+  }
+}
